@@ -1,13 +1,13 @@
 def selectionSort(alist):
-   for fillslot in range(len(alist)-1,0,-1):
+   for slot in range(len(alist)-1,0,-1):
        posiçãoMax=0
        for location in range(1,fillslot+1):
            if alist[location]>alist[posiçãoMax]:
                posiçãoMax = location
                print(alist)
 
-       temp = alist[fillslot]
-       alist[fillslot] = alist[posiçãoMax]
+       temp = alist[slot]
+       alist[slot] = alist[posiçãoMax]
        alist[posiçãoMax] = temp
 
 
